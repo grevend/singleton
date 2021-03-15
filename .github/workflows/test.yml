@@ -2,7 +2,7 @@ name: Test Deno module
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
       - '**.ts'
       - '**.js'
