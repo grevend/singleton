@@ -1,0 +1,20 @@
+name: Test Deno module
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - '**.ts'
+      - '**.js'
+      - '**.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Deno environment
+      uses: denolib/setup-deno@v2.3.0
+    - name: Run tests
+      run: deno test
