@@ -7,6 +7,8 @@ on:
       - '**.ts'
       - '**.js'
       - '**.yml'
+      
+  workflow_dispatch:
 
 jobs:
   build:
