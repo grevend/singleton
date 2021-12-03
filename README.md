@@ -11,3 +11,11 @@ const rand = singleton(Math.random);
 const first = rand.getInstance();
 const second = rand.getInstance(); // first === second
 ```
+
+#### Changing the inner instance
+```typescript
+  const str = singleton(() => "a");
+  const first = rand.getInstance(); // "a"
+  str.setInstance("b");
+  const second = rand.getInstance(); // "b", first !== second
+```
