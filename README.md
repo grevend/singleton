@@ -5,6 +5,7 @@
 ![alt text](https://img.shields.io/github/workflow/status/grevend/singleton/Test%20Deno%20module?label=Tests "Tests")
 
 ## Example
+
 ```typescript
 const rand = singleton(Math.random);
 const first = rand.getInstance();

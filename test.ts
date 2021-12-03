@@ -8,8 +8,8 @@ Deno.test("check single instance creation", () => {
 });
 
 Deno.test("check setting inner instance", () => {
-  const str = singleton(()=>"a");
+  const str = singleton(() => "a");
   assertEquals(str.getInstance(), "a");
   str.setInstance("b");
-  assertEquals(str.getInstance(), "b")
+  assertEquals(str.getInstance(), "b");
 });

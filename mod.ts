@@ -1,4 +1,4 @@
-export type Singleton<I> = { getInstance: () => I, setInstance: (x: I) => I; };
+export type Singleton<I> = { getInstance: () => I; setInstance: (x: I) => I };
 
 export default function singleton<I>(factory: () => I): Singleton<I> {
   let instance: I | null = null;
